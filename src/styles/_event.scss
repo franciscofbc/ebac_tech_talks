@@ -4,10 +4,9 @@
     padding: 80px 0;
 
     .container {
-        display: flex;
-        gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 80%;
-
     }
 
     &__details {
@@ -24,26 +23,27 @@
     }
 
     .infos-bar {
-        // background-color: variables.$corSecundaria;
         text-align: center;
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
-
-
+        text-transform: uppercase;
 
         &__infos {
+
             &__item {
+                background-color: variables.$corSecundaria;
+                width: 150px;
+
                 &--small {
-                    // color: variables.$corSecundaria;
-                    font-weight: 500;
+                    font-weight: 900;
                     color: variables.$secondaryTextColor;
-                    font-size: 32px;
                 }
 
                 &--big {
-                    font-size: 24px;
-                    color: variables.$secondaryTextColor;
-                    // font-weight: 600;
+                    font-size: 48px;
+                    font-weight: 600;
+
+                    &--hour {
+                        font-size: 16px;
+                    }
                 }
             }
         }
