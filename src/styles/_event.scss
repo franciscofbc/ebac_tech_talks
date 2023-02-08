@@ -11,6 +11,8 @@
 
     &__details {
         &__text {
+
+
             color: #000;
 
             &--big {
@@ -19,6 +21,14 @@
             }
 
             &--small {}
+
+            &--count {
+                padding-top: 16px;
+
+                &--span {
+                    font-weight: 900;
+                }
+            }
         }
     }
 
@@ -27,6 +37,7 @@
         text-transform: uppercase;
 
         &__infos {
+
 
             &__item {
                 background-color: variables.$corSecundaria;
