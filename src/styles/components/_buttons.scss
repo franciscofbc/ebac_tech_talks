@@ -1,19 +1,18 @@
 @use "../variables";
 
 .button {
-    padding: 12px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 12px 48px;
+    font-size: 32px;
     text-decoration: none;
-    text-align: center;
+    // text-align: center;
     white-space: nowrap;
 
     &--primary {
         color: variables.$textColor;
-        background-color: variables.$purple;
+        background-color: variables.$corTerciaria;
     }
 
-    @media(max-width: 640px) {
+    /*     @media(max-width: 640px) {
         display: block; //para link seria o suficiente
         width: 100%; //caso seja utilizado em um button
     }
@@ -21,5 +20,5 @@
     @media(max-width: 1023px) {
         display: flex;
         align-items: center;
-    }
+    } */
 }

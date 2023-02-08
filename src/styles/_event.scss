@@ -3,56 +3,53 @@
 .event {
     padding: 80px 0;
 
-    &--frontend {
-        background-image: linear-gradient(variables.$blue1, variables.$blue2);
-    }
-
-    &--ui-ux {
-        background-image: linear-gradient(variables.$blue2, variables.$pink);
-    }
-
-    &--data-science {
-        background-image: linear-gradient(variables.$pink, variables.$yellow);
-    }
-
-    &--backend {
-        background-image: linear-gradient(variables.$yellow, variables.$pink);
-    }
-
-    &--image-left {
-        .container {
-            flex-direction: row-reverse;
-        }
-    }
-
     .container {
         display: flex;
         gap: 40px;
-
-    }
-
-    &__image {
-        max-width: 360px;
+        max-width: 80%;
 
     }
 
     &__details {
+        &__text {
+            color: #000;
 
+            &--big {
+                font-size: 32px;
 
+            }
 
-        &__title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 16px;
-        }
-
-        &__description {
-            // font-size: 16px;
-            line-height: 22px;
+            &--small {}
         }
     }
 
-    @media (max-width: 640px) {
+    .infos-bar {
+        // background-color: variables.$corSecundaria;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+
+
+
+        &__infos {
+            &__item {
+                &--small {
+                    // color: variables.$corSecundaria;
+                    font-weight: 500;
+                    color: variables.$secondaryTextColor;
+                    font-size: 32px;
+                }
+
+                &--big {
+                    font-size: 24px;
+                    color: variables.$secondaryTextColor;
+                    // font-weight: 600;
+                }
+            }
+        }
+    }
+
+    /*    @media (max-width: 640px) {
         .container {
             display: block;
         }
@@ -65,5 +62,5 @@
         &__image {
             width: 100%;
         }
-    }
+    } */
 }

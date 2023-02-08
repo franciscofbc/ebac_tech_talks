@@ -3,6 +3,7 @@
 @use "./components/buttons";
 @use "./event";
 @use "./variables";
+@use "./schedule";
 
 * {
     margin: 0;
@@ -18,11 +19,11 @@
     width: 100%;
     margin: 0 auto;
 
-    @media (max-width: 640px) {
+/*     @media (max-width: 640px) {
         max-width: 80%;
     }
 
     @media (max-width: 1024px) {
         max-width: 90%;
-    }
+    } */
 }

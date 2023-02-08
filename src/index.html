@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.scss">
 
@@ -18,43 +19,86 @@
 
 <body>
     <header class="hero">
+        <p class="hero__title">Happy birthday</p>
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em <span id="contador"></span></p>
-            <div class="infos-bar">
-                <ul class="infos-bar__infos">
-                    <li class="infos-bar__infos__item">
-                        <b>Localização</b>
-                        Allianz Parque - Barra Funda - São Paulo
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Preço</b>
-                        A partir de R$ 120,00
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Quando</b>
-                        12/12/2022 às 19:00
-                    </li>
-                </ul>
-                <a class="button button--primary" href="#">
-                    Garanta sua vaga
+            <div class="hero__content">
+                <p class="hero__text hero__text--big">Sign up to be part of <b>the event of the year</b>
+                </p>
+                <p class="hero__text hero__text--small">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Corporis rerum natus
+                    molestiae illum quae harum ipsum, blanditiis in assumenda laudantium saepe sit aperiam maiores nisi
+                    quia
+                    dolor aut odit vel.</p>
+                <a class="hero__button" href="#">
+                    Register me, please!
                 </a>
             </div>
         </div>
     </header>
-    <section class="event event--frontend">
-        <div class="container" data-aos="fade-right">
+
+    <section class="event">
+        <div class="container">
             <div class="event__details">
-                <h2 class="event__details__title">Front-end</h2>
-                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                    reiciendis molestiae velit dolorum
-                    laboriosam dolore, voluptates quod consequuntur modi fuga optio doloribus accusamus possimus debitis
-                    exercitationem aut dignissimos sapiente impedit?</p>
+                <p class="event__details__text event__details__text--big">
+                    Save the date of the event
+                </p>
+                <p class="event__details__text event__details__text--small">
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Aliquam
+                    voluptas.
+                </p>
             </div>
-            <img class="event__image" src="./images/frontend.png" alt="Front-end">
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <p class="infos-bar__infos__item--small">Day</p>
+                        <p class="infos-bar__infos__item--big">12</p>
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <p class="infos-bar__infos__item--small">Month</p>
+                        <p class="infos-bar__infos__item--big">February</p>
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <p class="infos-bar__infos__item--small">Hour</p>
+                        <p class="infos-bar__infos__item--big">19:00</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <section class="event event--ui-ux event--image-left">
+
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-grid">
+                <div class="schedule__details">
+                    <p class="schedule__details__text schedule__details__text--big">
+                        Schedule of the artists
+                    </p>
+                </div>
+                <div class="schedule__details">
+                    <p class="schedule__details__text schedule__details__text--small">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dicta velit, recusandae molestiae
+                        ab
+                        corporis! Dignissimos tempore, exercitationem sint libero consequatur perspiciatis illo error
+                        nemo,
+                        tenetur rerum ex, accusantium aliquid!
+                    </p>
+                </div>
+            </div>
+            <div class="shows">
+                <p class="schedule__details__text--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatem molestiae perferendis,
+                    assumenda id explicabo eius quaerat doloribus excepturi molestias accusamus esse animi nemo
+                    asperiores, corrupti, temporibus possimus est eos!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--   <section class="event event--ui-ux event--image-left">
         <div class="container" data-aos="fade-left">
             <div class="event__details">
                 <h2 class="event__details__title">UI/UX</h2>
@@ -89,7 +133,7 @@
             </div>
             <img class="event__image" src="./images/backend.png" alt="Back-end">
         </div>
-    </section>
+    </section> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
